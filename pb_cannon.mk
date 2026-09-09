@@ -26,4 +26,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="twrp_cannon-eng 127 RQ1A.210205.004 eng.fire.20220411.113653 test-keys"
 
-BUILD_FINGERPRINT := Redmi/twrp_cannon/cannon:127/RQ1A.210205.004/fire04111136:eng/test-keys
+BUILD_FINGERPRINT := Redmi/twrp_cannon/cannon:127/RQ1A.260910.004/fire04111136:eng/test-keys
