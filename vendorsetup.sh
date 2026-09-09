@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo pb_cannon-user
-add_lunch_combo pb_cannon-userdebug
-add_lunch_combo pb_cannon-eng
+add_lunch_combo twrp_cannon-user
+add_lunch_combo twrp_cannon-userdebug
+add_lunch_combo twrp_cannon-eng
