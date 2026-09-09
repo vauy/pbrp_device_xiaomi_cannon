@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pb_cannon.mk
+    $(LOCAL_DIR)/twrp_cannon.mk
 
 COMMON_LUNCH_CHOICES := \
-    pb_cannon-user \
-    pb_cannon-userdebug \
-    pb_cannon-eng
+    twrp_cannon-user \
+    twrp_cannon-userdebug \
+    twrp_cannon-eng
