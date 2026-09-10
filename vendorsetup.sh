@@ -7,6 +7,3 @@
 
 #!/system/bin/sh
 export TW_DEFAULT_LANGUAGE="zh"
-add_lunch_combo twrp_cannon-user
-add_lunch_combo twrp_cannon-userdebug
-add_lunch_combo twrp_cannon-eng
