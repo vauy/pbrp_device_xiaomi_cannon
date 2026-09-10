@@ -9,5 +9,5 @@ PRODUCT_MAKEFILES := \
     device/xiaomi/cannon/pb_cannon.mk
 
 COMMON_LUNCH_CHOICES := \
-    pb_cannon-eng \
-    pb_cannon-userdebug
+    twrp_cannon-eng \
+    twrp_cannon-userdebug
