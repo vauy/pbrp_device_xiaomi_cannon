@@ -6,5 +6,6 @@
 #
 
 #!/system/bin/sh
+#!/system/bin/sh
 export TW_DEFAULT_LANGUAGE="zh"
-export COMMON_LUNCH_CHOICES="pb_cannon-eng pb_cannon-userdebug"
+export COMMON_LUNCH_CHOICES="twrp_cannon-eng twrp_cannon-userdebug"
