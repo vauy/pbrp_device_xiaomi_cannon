@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2023 The Android Open Source Project
 # Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 #
@@ -99,7 +99,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
+PLATFORM_VERSION := 16.0.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -117,4 +117,10 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 FOX_MAINTAINER_PATCH_VERSION := 121
 FOX_BUILD_TYPE := Unofficial
 FOX_ENABLE_KERNELSU_SUPPORT := true
+# FBE 加密支持
+PLATFORM_VERSION := 16.0.0
+PLATFORM_VERSION_LAST_STABLE := 16.0.0
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
