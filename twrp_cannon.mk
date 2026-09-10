@@ -24,4 +24,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT := Redmi/cannon/cannon:12/RQ1A.210205.004/V12.5.4.0.RJGCNXM:user/release-keys
 
-BUILD_FINGERPRINT := Redmi/twrp_cannon/cannon:12/RQ1A.260910.004/fire04111136:eng/test-keys
+BUILD_FINGERPRINT := Redmi/cannon/cannon:12/RQ1A.210205.004/V12.5.4.0.RJGCNXM:user/release-keys
