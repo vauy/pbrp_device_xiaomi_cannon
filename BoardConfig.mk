@@ -148,6 +148,12 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/vendor/lib64/libTEECommon.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/libTEECommon.so \
     $(DEVICE_PATH)/prebuilt/vendor/lib64/libion_mtk.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/libion_mtk.so
 
+
 # ---- vendor 服务 ----
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:$(TARGET_RECOVERY_ROOT_OUT)/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+
+# ---- MTK TEE daemon（解密关键）----
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilt/vendor/bin/teei_daemon:$(TARGET_RECOVERY_ROOT_OUT)/vendor/bin/teei_daemon \
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/libteei_daemon_vfs.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/libteei_daemon_vfs.so
