@@ -6,9 +6,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_cannon.mk
+    device/xiaomi/cannon/pb_cannon.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_cannon-user \
-    twrp_cannon-userdebug \
-    twrp_cannon-eng
+    pb_cannon-eng \
+    pb_cannon-userdebug
