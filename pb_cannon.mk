@@ -24,6 +24,6 @@ PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="pb_cannon-eng 127 RQ1A.260910.004 eng.fire.20220411.113653 test-keys"
+    PRIVATE_BUILD_DESC="pb_cannon-eng 12 RQ1A.260910.004 eng.fire.20220411.113653 test-keys"
 
-BUILD_FINGERPRINT := Redmi/pb_cannon/cannon:127/RQ1A.260910.004/fire04111136:eng/test-keys
+BUILD_FINGERPRINT := Redmi/pb_cannon/cannon:12/RQ1A.260910.004/fire04111136:eng/test-keys
