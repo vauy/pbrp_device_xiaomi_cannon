@@ -15,7 +15,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 $(call inherit-product, device/xiaomi/cannon/device.mk)
 
 PRODUCT_DEVICE := cannon
-PRODUCT_NAME := pb_cannon
+PRODUCT_NAME := twrp_cannon
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2007J22C
 PRODUCT_MANUFACTURER := Xiaomi
