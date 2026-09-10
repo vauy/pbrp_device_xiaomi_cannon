@@ -132,28 +132,28 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # ---- system 库 ----
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/system/lib64/libkeymint.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/libkeymint.so \
-    $(DEVICE_PATH)/prebuilt/system/lib64/libkeymint_support.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/libkeymint_support.so \
-    $(DEVICE_PATH)/prebuilt/system/lib64/lib_android_keymaster_keymint_utils.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/lib_android_keymaster_keymint_utils.so \
-    $(DEVICE_PATH)/prebuilt/system/lib64/libgatekeeper.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/libgatekeeper.so \
-    $(DEVICE_PATH)/prebuilt/system/lib64/libgatekeeper_aidl.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/libgatekeeper_aidl.so \
-    $(DEVICE_PATH)/prebuilt/system/lib64/android.hardware.security.keymint-V4-ndk.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/android.hardware.security.keymint-V4-ndk.so \
-    $(DEVICE_PATH)/prebuilt/system/lib64/android.hardware.gatekeeper-V1-ndk.so:$(TARGET_RECOVERY_ROOT_OUT)/system/lib64/android.hardware.gatekeeper-V1-ndk.so
+    $(DEVICE_PATH)/prebuilt/system/lib64/libkeymint.so:recovery/root/system/lib64/libkeymint.so \
+    $(DEVICE_PATH)/prebuilt/system/lib64/libkeymint_support.so:recovery/root/system/lib64/libkeymint_support.so \
+    $(DEVICE_PATH)/prebuilt/system/lib64/lib_android_keymaster_keymint_utils.so:recovery/root/system/lib64/lib_android_keymaster_keymint_utils.so \
+    $(DEVICE_PATH)/prebuilt/system/lib64/libgatekeeper.so:recovery/root/system/lib64/libgatekeeper.so \
+    $(DEVICE_PATH)/prebuilt/system/lib64/libgatekeeper_aidl.so:recovery/root/system/lib64/libgatekeeper_aidl.so \
+    $(DEVICE_PATH)/prebuilt/system/lib64/android.hardware.security.keymint-V4-ndk.so:recovery/root/system/lib64/android.hardware.security.keymint-V4-ndk.so \
+    $(DEVICE_PATH)/prebuilt/system/lib64/android.hardware.gatekeeper-V1-ndk.so:recovery/root/system/lib64/android.hardware.gatekeeper-V1-ndk.so
 
 # ---- vendor 库（MTK beanpod TEE，关键！）----
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/hw/gatekeeper.beanpod.so \
-    $(DEVICE_PATH)/prebuilt/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/hw/kmsetkey.beanpod.so \
-    $(DEVICE_PATH)/prebuilt/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
-    $(DEVICE_PATH)/prebuilt/vendor/lib64/libTEECommon.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/libTEECommon.so \
-    $(DEVICE_PATH)/prebuilt/vendor/lib64/libion_mtk.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/libion_mtk.so
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/hw/gatekeeper.beanpod.so:recovery/root/vendor/lib64/hw/gatekeeper.beanpod.so \
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/hw/kmsetkey.beanpod.so:recovery/root/vendor/lib64/hw/kmsetkey.beanpod.so \
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:recovery/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/libTEECommon.so:recovery/root/vendor/lib64/libTEECommon.so \
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/libion_mtk.so:recovery/root/vendor/lib64/libion_mtk.so
 
 
 # ---- vendor 服务 ----
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:$(TARGET_RECOVERY_ROOT_OUT)/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+    $(DEVICE_PATH)/prebuilt/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:recovery/root/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
 
 # ---- MTK TEE daemon（解密关键）----
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/vendor/bin/teei_daemon:$(TARGET_RECOVERY_ROOT_OUT)/vendor/bin/teei_daemon \
-    $(DEVICE_PATH)/prebuilt/vendor/lib64/libteei_daemon_vfs.so:$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64/libteei_daemon_vfs.so
+    $(DEVICE_PATH)/prebuilt/vendor/bin/teei_daemon:recovery/root/vendor/bin/teei_daemon \
+    $(DEVICE_PATH)/prebuilt/vendor/lib64/libteei_daemon_vfs.so:recovery/root/vendor/lib64/libteei_daemon_vfs.so
