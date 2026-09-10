@@ -16,7 +16,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/xiaomi/cannon/device.mk)
 
 PRODUCT_DEVICE := cannon
-PRODUCT_NAME := twrp_cannon
+PRODUCT_NAME := pb_cannon
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2007J22C
 PRODUCT_MANUFACTURER := xiaomi
@@ -24,6 +24,6 @@ PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="twrp_cannon-eng 127 RQ1A.260910.004 eng.fire.20220411.113653 test-keys"
+    PRIVATE_BUILD_DESC="pb_cannon-eng 127 RQ1A.260910.004 eng.fire.20220411.113653 test-keys"
 
-BUILD_FINGERPRINT := Redmi/twrp_cannon/cannon:127/RQ1A.260910.004/fire04111136:eng/test-keys
+BUILD_FINGERPRINT := Redmi/pb_cannon/cannon:127/RQ1A.260910.004/fire04111136:eng/test-keys
